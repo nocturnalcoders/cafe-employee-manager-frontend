@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+Café Employee Manager Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Apology and Update
 
-## Available Scripts
+Dear Users,
 
-In the project directory, you can run:
+I want to apologize for not implementing TanStack Query and TanStack Router as initially planned. Due to time constraints and research requirements, I have used axios for data fetching and react-router-dom for routing, as these are the tools I am more familiar with. Implementing TanStack Query and TanStack Router would have required additional time for research and integration.
 
-### `npm start`
+Thank you for your understanding, and I appreciate your patience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Café Employee Manager Frontend is a React application designed to interact with the Café Employee Manager Backend. It provides a user-friendly interface for managing cafés and employees, including functionalities for creating, updating, and deleting records.
 
-### `npm test`
+Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Café Management: Interface for managing café records.
+Employee Management: Manage employee records and their association with cafés.
+User Interface: Responsive and styled with Material-UI or Ant Design.
+Data Fetching and Routing: Utilizes React Router for navigation.
+Requirements
 
-### `npm run build`
+Node.js: Ensure that Node.js (version 18 or higher) is installed on your system.
+npm: npm is used to manage dependencies.
+Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prerequisites
+Node.js: Install Node.js from nodejs.org.
+npm: Included with Node.js.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Configuration
+Install Dependencies: Navigate to the project directory and install the required npm packages:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[npm install]
 
-### `npm run eject`
+[npm start]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[npm run build]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[docker build -t cafe-employee-manager-frontend .]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Run the Docker Container
+[docker run -p 5000:80 --name cafe-employee-manager-frontend cafe-employee-manager-frontend]
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Stopping and Removing the Docker Container
+[docker stop cafe-employee-manager-frontend]
 
-## Learn More
+To remove the stopped container, use:
+[docker rm cafe-employee-manager-frontend]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
